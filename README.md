@@ -11,6 +11,10 @@ You'll want to change some configuration options for your own app:
 
 1. MongoDB Database Name. Set in conf/environment/*.json. Specify the name / location of the DB in the environment configuration variables
 
+# Usage
+1. Run `node server.js`. 
+2. In another window, run `make gulp`.
+
 # Components
 ## Base building blocks - Backend
 * Express.js
