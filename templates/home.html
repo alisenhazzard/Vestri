@@ -1,5 +1,9 @@
 {{- include _top.html }}
 
+<div class="home-banner__map">
+	<img src="/static/build/img/map.png" />
+</div>
+
 <div class="site-header__title-wrapper">
 	<h1 class="title-wrapper__podcast-title">Higher Level Podcast</h1>
 	<h2 class="title-wrapper__podcast-host">with Erik Hazzard</h2>
@@ -7,17 +11,23 @@
 
 <div class="site-header__navigation-wrapper">
 	<div class="site-header__navigation-links">
-		<a href="#" class="site-header__navigation-link">Episodes</a>
-		<a href="#" class="site-header__navigation-link">About</a>
-		<a href="#" class="site-header__navigation-link">Subscribe</a>
+		<a href="#" class="site-header__navigation-link underline-link">Episodes</a>
+		<a href="#" class="site-header__navigation-link underline-link">About</a>
+		<a href="#" class="site-header__navigation-link underline-link">Subscribe</a>
 		<a href="#" class="site-header__navigation-link">Connect</a>
 	</div>
+</div>
+
+<div class="podcast-tagline">
+	<p class="podcast-tagline__paragraph">
+		A podcast about data viz, game theory, and everything in between.
+	</p>
 </div>
 
 <div class="latest-episode__latest-episode-wrapper">
 	<h2 class="latest-episode__show-name">#1 The Flow State</h2>
 	<h4 class="latest-episode__show-length"> 15 minutes </h4>
-	<iframe class="latest-episode__soundcloud-clip" width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/7592207&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
+	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/7592207&amp;color=336699&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
 </div>
 
 {{- include _bottom.html }}
