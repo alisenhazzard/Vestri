@@ -1,18 +1,23 @@
 {{- include _top.html }}
 
-
-<h1>Higher Level Podcast</h1>
-<h2>with Erik Hazzard</h2>
-
-<div class="links">
-	<a href="#"></a>
+<div class="site-header__title-wrapper">
+	<h1 class="title-wrapper__podcast-title">Higher Level Podcast</h1>
+	<h2 class="title-wrapper__podcast-host">with Erik Hazzard</h2>
 </div>
 
-<div class="latest-episode">
-	<h2>#1 The Flow State</h2>
-	<h4>15 minutes</h4>
-	<iframe width="100%" height="250" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/7592207&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
+<div class="site-header__navigation-wrapper">
+	<div class="site-header__navigation-links">
+		<a href="#" class="site-header__navigation-link">Episodes</a>
+		<a href="#" class="site-header__navigation-link">About</a>
+		<a href="#" class="site-header__navigation-link">Subscribe</a>
+		<a href="#" class="site-header__navigation-link">Connect</a>
+	</div>
 </div>
 
+<div class="latest-episode__latest-episode-wrapper">
+	<h2 class="latest-episode__show-name">#1 The Flow State</h2>
+	<h4 class="latest-episode__show-length"> 15 minutes </h4>
+	<iframe class="latest-episode__soundcloud-clip" width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/7592207&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
+</div>
 
 {{- include _bottom.html }}

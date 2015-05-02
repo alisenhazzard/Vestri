@@ -1,1 +1,28 @@
 // Home page components
+
+/*******************************************
+		PODCAST TITLE WRAPPER 
+*******************************************/
+.site-header__title-wrapper {
+	text-align: center;
+}
+.title-wrapper__podcast-title {
+	color: #336699;
+	font-size: 3.125rem;
+	line-height: 3rem;
+}
+
+/*******************************************
+		NAVIGATION 
+*******************************************/
+.site-header__navigation-link {
+	display: block;
+	width: 45%:
+}
+
+/*******************************************
+		LATEST EPISODE 
+********************************************/
+.latest-episode__latest-episode-wrapper {
+	max-width: 1100px;	
+}
