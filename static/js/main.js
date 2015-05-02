@@ -17,6 +17,8 @@ window.jQuery = window.$ = $; // need to expose jQuery to window
 var _ = require('./lib/lodash');
 window._ = _;
 
+var foundation = require('./lib/foundation.min');
+
 var localforage = require('localforage');
 window.localforage = localforage;
 
