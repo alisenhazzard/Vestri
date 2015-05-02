@@ -40,8 +40,6 @@
 *   designed for a 100% width layout. For bigger screen sizes we set breakpoints 
 *   and make sure it looks good.
 *
-* - For desktop our main column with is 860px
-*
 * - For the main layout containers we use ID's instead of classes!
 *
 * - We animate certain layers with CSS3 transitions! Be careful what properties
@@ -50,14 +48,7 @@
 *
 * - Avoid using transition: all its exansive and can have a lot of side effects!
 *
-* - We include mixins always at the top of the class defintion
-*   Example:
-*		.some-component{
-*			@include transition(width 1s);
-*			@include position(absolute, 0 0 0 0);
-*           width: 120px;
-*						
-*		}
+
 *	https://css-tricks.com/sass-style-guide/
 */
 
@@ -108,4 +99,4 @@
 // ======================================
 
 // IMPORT PAGES HERE
-// @import "components/home";
+@import "components/home";
