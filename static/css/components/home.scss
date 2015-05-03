@@ -60,7 +60,7 @@
 .latest-episode__latest-episode-wrapper {
 	background: #336699;
 	max-width: 700px;	
-	margin: 50px 0;
+	margin-top: 50px;
 	padding-top: 20px;
 }
 .latest-episode__show-name {
@@ -68,6 +68,9 @@
 	line-height: 1em;
 }
 .all-episodes__all-episodes-wrapper {
+	display: none;
+}
+.all-episodes__button {
 	display: none;
 }
 
@@ -78,6 +81,12 @@
 	display: none;
 }
 
+/*******************************************
+		SUBSCRIBE WRAPPER 
+********************************************/
+.subscribe-wrapper {
+	display: none;
+}
 
 /*******************************************
 		FOUNDATION OVERRIDES
@@ -158,6 +167,7 @@
 		background: #336699;
 		color: $COLOR-OFF-WHITE;
 		display: block;
+		margin-top: 50px;
 	}
 	.about-wrapper__text-content {
 		max-width: 700px;
@@ -166,6 +176,22 @@
 	}
 	.about-wrapper__about-title {
 		color: $COLOR-OFF-WHITE;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	/* SUBSCRIBE WRAPPER */
+	.subscribe-wrapper {
+		display: block;
+		max-width: 700px;
+		margin: 50px auto;
+	}
+	.subscribe-wrapper__title {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.subscribe-wrapper__paragraph {
+		text-align: center;
 	}
 }
 
