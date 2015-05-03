@@ -19,11 +19,18 @@
 	margin-top: 25px;
 }
 .title-wrapper__podcast-title span {
+	border-bottom: 1px solid;
 	font-size: 0.5em;
 	display: block;
+	width: 20%;
+	margin: 0 auto;
+	line-height: 1.5em;
 }
 .title-wrapper__podcast-host{
 	font-size: 1.414em;
+}
+.podcast-tagline-web {
+	display: none;
 }
 
 /*******************************************
@@ -45,16 +52,122 @@
 }
 
 /*******************************************
-		LATEST EPISODE 
+		EPISODES SECTION 
 ********************************************/
+.episode-section__header {
+	display: none;
+}
 .latest-episode__latest-episode-wrapper {
-	max-width: 800px;	
+	background: #336699;
+	max-width: 700px;	
+	margin: 50px 0;
+	padding-top: 20px;
 }
 .latest-episode__show-name {
-	color: #336699;
+	color: #ffffff;
 	line-height: 1em;
 }
+.all-episodes__all-episodes-wrapper {
+	display: none;
+}
 
+/*******************************************
+		ABOUT WRAPPER 
+********************************************/
+.about-wrapper {
+	display: none;
+}
+
+
+/*******************************************
+		FOUNDATION OVERRIDES
+********************************************/
+.button {
+	background: #336699;
+}
+.button:hover {
+	background: #244873;
+}
+
+/*******************************************
+		MEDIA QUERIES
+********************************************/
+@media screen and (min-width: 768px) {
+	.home-banner__map {
+		display: none;
+	}
+	.site-header__title-wrapper {
+		background: url("/static/img/map.png");
+		background-size: cover;
+		height: 300px;
+		padding: 50px 0;
+		color: $COLOR-OFF-WHITE;
+		text-shadow: 1px 1px 1px #000000;
+	}
+	.title-wrapper__podcast-title {
+		color: $COLOR-OFF-WHITE;
+		margin-top: 0;
+	}
+	.title-wrapper__podcast-host {
+		color: $COLOR-OFF-WHITE;
+	}
+	.podcast-tagline-web {
+		display: block;
+	}
+	.site-header__navigation-wrapper {
+		display: none;
+	}
+	.podcast-tagline {
+		display: none;
+	}
+
+	/* EPISODE SECTION */
+	.episode-section__wrapper {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+	.episode-section__header {
+		display: block;
+		font-size: 1.414em;
+		margin-top: 50px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.latest-episode__latest-episode-wrapper {
+		background: #ffffff;
+	}	
+	.latest-episode__show-name {
+		color: initial;
+	}
+	.all-episodes__all-episodes-wrapper {
+		display: block;
+		max-width: 700px;	
+		margin: 100px 0;
+		padding-top: 20px;
+	}
+	.all-episodes__show-name {
+		line-height: 1em;
+	}
+	.all-episodes__button {
+		display: table;
+		margin: 0 auto;
+	}
+
+	/* ABOUT WRAPPER */
+	.about-wrapper {
+		background: #336699;
+		color: $COLOR-OFF-WHITE;
+		display: block;
+	}
+	.about-wrapper__text-content {
+		max-width: 700px;
+		margin: 0 auto;
+		padding: 50px 0;
+	}
+	.about-wrapper__about-title {
+		color: $COLOR-OFF-WHITE;
+	}
+}
 
 
 
