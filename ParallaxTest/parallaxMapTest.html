@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parallax Map Test</title>
+</head>
+<body>
+
+	<div class="parallax">
+		<div class="parallax__layer parallax__layer--back">
+	  		<img src="map.png" style="width: 100%;"/>
+	  	</div>
+	  	<div class="parallax__layer parallax__layer--base">
+	   		<img src="CloudLayer1.png" style="width: 100%;"/>
+		</div>
+		<div class="parallax__layer parallax__layer--deep">
+	   		<img src="CloudLayer2.png" style="width: 100%;"/>
+		</div>
+	</div>
+
+</body>
+</html>
+
+<style type="text/css">
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+}
+.parallax__layer--deep {
+  transform: translateZ(-2px) scale(3);
+}
+</style>
