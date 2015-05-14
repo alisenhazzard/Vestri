@@ -1,87 +1,7 @@
 // Home page components
 
-p {
-	font-size: 20px !important;
-}
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Ubuntu', sans-serif;
-}
-/*******************************************
-		PODCAST TITLE WRAPPER 
-*******************************************/
-.site-header__title-wrapper {
-	text-align: center;
-}
-.title-wrapper__podcast-title {
-	font-size: 3em;
-	line-height: 1.1em;
-	margin-top: 25px;
-}
-.title-wrapper__podcast-title span {
-	border-bottom: 1px solid;
-	font-size: 0.35em;
-	display: block;
-	width: 20%;
-	margin: 0 auto;
-	line-height: 1.5em;
-}
-.title-wrapper__podcast-host{
-	font-size: 1.414em;
-}
-
-/*******************************************
-		NAVIGATION 
-*******************************************/
-.site-header__navigation-wrapper {
-	display: table;
-	margin: 50px auto;
-}
-.site-header__navigation-link {
-	display: block;
-	font-size: 1.414em;
-	margin: 5px 0;
-	text-align: center;
-	text-transform: uppercase;
-}
-.underline-link {
-	border-bottom: 2px solid;
-}
-
-/*******************************************
-		EPISODES SECTION 
-********************************************/
-.episode-section__header {
-	display: none;
-}
-.latest-episode__latest-episode-wrapper {
-	background: #336699;
-	max-width: 700px;	
-	margin-top: 50px;
-	padding-top: 20px;
-}
-.latest-episode__show-name {
-	color: #ffffff;
-	line-height: 1em;
-}
-.all-episodes__all-episodes-wrapper {
-	display: none;
-}
-.all-episodes__button {
-	display: none;
-}
-
-/*******************************************
-		ABOUT WRAPPER 
-********************************************/
-.about-wrapper {
-	display: none;
-}
-
-/*******************************************
-		SUBSCRIBE WRAPPER 
-********************************************/
-.subscribe-wrapper {
-	display: none;
 }
 
 /*******************************************
@@ -95,100 +15,137 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*******************************************
+		PODCAST TITLE WRAPPER 
+*******************************************/
+.site-header__title-wrapper {
+	background: 
+		linear-gradient(
+			rgba(0,0,0,0.2),
+			rgba(0,0,0,0.5)
+		),
+		url("/static/img/map.png");
+	background-size: cover;
+	height: 270px;
+	padding: 50px 0;
+	color: $COLOR-OFF-WHITE;
+	text-shadow: 1px 1px 1px #000000;
+	text-align: center;
+}
+.title-wrapper__podcast-title {
+	color: $COLOR-OFF-WHITE;
+	font-size: 3em;
+	line-height: 1.1em;
+	margin-top: 25px;
+}
+.title-wrapper__podcast-title span {
+	border-bottom: 1px solid;
+	font-size: 0.35em;
+	display: block;
+	width: 20%;
+	margin: 0 auto;
+	line-height: 1.5em;
+}
+.title-wrapper__podcast-host{
+	color: $COLOR-OFF-WHITE;
+	font-size: 1.414em;
+}
+
+/*******************************************
+		EPISODE SECTION
+********************************************/
+.episode-section__wrapper {
+	max-width: 700px;
+	margin: 0 auto;
+}
+.episode-section__header {
+	display: block;
+	margin-top: 50px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.all-episodes__all-episodes-wrapper {
+	display: block;
+	max-width: 700px;	
+	margin: 20px 0;
+	padding-top: 20px;
+}
+.all-episodes__show-name {
+	line-height: 1em;
+}
+.all-episodes__button {
+	display: table;
+	margin: 0 auto;
+}
+
+/*******************************************
+		ABOUT WRAPPER
+********************************************/
+.about-wrapper {
+	background: #C8DAEC;
+	display: block;
+	margin-top: 50px;
+	padding: 0 10px;
+}
+.about-wrapper__text-content {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+.about-wrapper__about-title {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/*******************************************
+		SUBSCRIBE WRAPPER
+********************************************/
+.subscribe-wrapper {
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 0 10px;
+}
+.subscribe-wrapper__title {
+	text-align: center;
+	text-transform: uppercase;
+}
+.subscribe-wrapper__paragraph {
+	text-align: center;
+}
+.subscribe-button {
+	line-height: 5px;
+	height: 37px;
+	margin: 0 auto;
+	display: table;
+}
+
+/*******************************************
 		MEDIA QUERIES
 ********************************************/
 @media screen and (min-width: 768px) {
-	.home-banner__map {
-		display: none;
+	p {
+		font-size: 20px !important;
 	}
+
+	/* HEADER */
 	.site-header__title-wrapper {
-		background: 
-			linear-gradient(
-				rgba(0,0,0,0.2),
-				rgba(0,0,0,0.5)
-			),
-			url("/static/img/map.png");
-		background-size: cover;
 		height: 300px;
-		padding: 50px 0;
-		color: $COLOR-OFF-WHITE;
-		text-shadow: 1px 1px 1px #000000;
 	}
 	.title-wrapper__podcast-title {
-		color: $COLOR-OFF-WHITE;
 		font-size: 5em;
 		margin-top: 0;
 	}
-	.title-wrapper__podcast-host {
-		color: $COLOR-OFF-WHITE;
-	}
-	.site-header__navigation-wrapper {
-		display: none;
-	}
 
-	/* EPISODE SECTION */
-	.episode-section__wrapper {
-		max-width: 700px;
-		margin: 0 auto;
-	}
-	.episode-section__header {
-		display: block;
-		font-size: 1.414em;
-		margin-top: 50px;
-		text-transform: uppercase;
-		text-align: center;
-	}
-	.latest-episode__latest-episode-wrapper {
-		background: #ffffff;
-	}	
-	.latest-episode__show-name {
-		color: initial;
-	}
-	.all-episodes__all-episodes-wrapper {
-		display: block;
-		max-width: 700px;	
+	/* EPISODES WRAPPER */
+	.all-episodes__all-episodes-wrapper {	
 		margin: 100px 0;
-		padding-top: 20px;
-	}
-	.all-episodes__show-name {
-		line-height: 1em;
-	}
-	.all-episodes__button {
-		display: table;
-		margin: 0 auto;
 	}
 
 	/* ABOUT WRAPPER */
-	.about-wrapper {
-		background: #336699;
-		color: $COLOR-OFF-WHITE;
-		display: block;
-		margin-top: 50px;
-	}
 	.about-wrapper__text-content {
-		max-width: 700px;
-		margin: 0 auto;
 		padding: 50px 0;
-	}
-	.about-wrapper__about-title {
-		color: $COLOR-OFF-WHITE;
-		text-transform: uppercase;
-		text-align: center;
 	}
 
 	/* SUBSCRIBE WRAPPER */
-	.subscribe-wrapper {
-		display: block;
-		max-width: 600px;
-		margin: 50px auto;
-	}
-	.subscribe-wrapper__title {
-		text-align: center;
-		text-transform: uppercase;
-	}
-	.subscribe-wrapper__paragraph {
-		text-align: center;
-	}
 	.podcast-submit-wrapper__email {
 		display: inline-block;
 		float: left;
@@ -196,8 +153,6 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.subscribe-button {
 		width: 40%;
-		line-height: 5px;
-		height: 37px;
 	}
 }
 
