@@ -1,60 +1,14 @@
 // Home page components
 
-/*******************************************
-		PARALLAX 
-*******************************************/
-.parallax {
-  perspective: 1px;
-  height: 70vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+p {
+	font-size: 20px !important;
 }
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Ubuntu', sans-serif;
 }
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-.parallax__layer--back {
-  transform: translateZ(-1px) scale(2);
-}
-.parallax__layer--deep {
-  transform: translateZ(-2px) scale(3);
-}
-/*******************************************
-		PODCAST TITLE WRAPPER
-*******************************************/
-.title-wrapper__podcast-title span {
-	border-bottom: 1px solid;
-	font-size: 0.5em;
-	display: table;
-	width: 20%;
-	margin: 0 auto;
-	line-height: 1.5em;
-}
-.title-wrapper__podcast-title {
-	display: table;
-	font-size: 3em;
-	line-height: 1.1em;
-	margin: 200px auto 0;
-}
-.title-wrapper__podcast-host {
-	display: table;
-	font-size: 1.414em;
-	margin: 0 auto;
-}
-.podcast-tagline__paragraph-web {
-	display: table;
-	margin: 50px auto 0;
-}
-
 /*******************************************
 		PODCAST TITLE WRAPPER 
-
+*******************************************/
 .site-header__title-wrapper {
 	text-align: center;
 }
@@ -65,7 +19,7 @@
 }
 .title-wrapper__podcast-title span {
 	border-bottom: 1px solid;
-	font-size: 0.5em;
+	font-size: 0.35em;
 	display: block;
 	width: 20%;
 	margin: 0 auto;
@@ -73,9 +27,6 @@
 }
 .title-wrapper__podcast-host{
 	font-size: 1.414em;
-}
-.podcast-tagline-web {
-	display: none;
 }
 
 /*******************************************
@@ -150,9 +101,13 @@
 	.home-banner__map {
 		display: none;
 	}
-	/*
 	.site-header__title-wrapper {
-		background: url("/static/img/map.png");
+		background: 
+			linear-gradient(
+				rgba(0,0,0,0.2),
+				rgba(0,0,0,0.5)
+			),
+			url("/static/img/map.png");
 		background-size: cover;
 		height: 300px;
 		padding: 50px 0;
@@ -161,18 +116,13 @@
 	}
 	.title-wrapper__podcast-title {
 		color: $COLOR-OFF-WHITE;
+		font-size: 5em;
 		margin-top: 0;
 	}
 	.title-wrapper__podcast-host {
 		color: $COLOR-OFF-WHITE;
 	}
-	.podcast-tagline-web {
-		display: block;
-	}*/
 	.site-header__navigation-wrapper {
-		display: none;
-	}
-	.podcast-tagline {
 		display: none;
 	}
 
@@ -229,7 +179,7 @@
 	/* SUBSCRIBE WRAPPER */
 	.subscribe-wrapper {
 		display: block;
-		max-width: 700px;
+		max-width: 600px;
 		margin: 50px auto;
 	}
 	.subscribe-wrapper__title {
@@ -238,6 +188,16 @@
 	}
 	.subscribe-wrapper__paragraph {
 		text-align: center;
+	}
+	.podcast-submit-wrapper__email {
+		display: inline-block;
+		float: left;
+		width: 60% !important;
+	}
+	.subscribe-button {
+		width: 40%;
+		line-height: 5px;
+		height: 37px;
 	}
 }
 
